@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://dozer.sourceforge.net"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <custom-converters>
+
+            <converter
+                    type="com.demo.lostandfound.service.utils.mapping.mappers.PetToUIPetConverter">
+                <class-a>com.demo.lostandfound.service.model.Pet</class-a>
+                <class-b>com.demo.lostandfound.service.utils.mapping.pojos
+                    .UIPet</class-b>
+            </converter>
+
+<!--            <converter-->
+<!--                    type="com.demo.lostandfound.service.utils.mapping.mappers.DocumentToUIDocumentConverter">-->
+<!--                <class-a>com.demo.lostandfound.service.model-->
+<!--                    .Document</class-a>-->
+<!--                <class-b>com.demo.lostandfound.service.utils.mapping.pojos-->
+<!--                    .UIDocument</class-b>-->
+<!--            </converter>-->
+
+        </custom-converters>
+    </configuration>
+</mappings>
